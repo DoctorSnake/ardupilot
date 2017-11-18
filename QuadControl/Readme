@@ -1,0 +1,9 @@
+ 
+QuadControl.v1
+- Saturation du controleur sur la plage throttle_min et max
+- suppression de ins.update() supplementaire et inutile, qui bloquait l'intégration correcte des vitesses angulaires. On garde seulement ahrs.update()
+- diminution des gains proportionnels en pitch 
+pitch_stab.kp = 3 au lieu de 6, et pitch_rate.kp = 3, pitch_rate.ki = 1, pitch_rate.imax = 50;
+
+
+
